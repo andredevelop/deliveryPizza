@@ -1,3 +1,3 @@
 # deliveryPizza
 ## A simples delivery
-### In portuguese from Brazil but all can tu use
+### It's in portuguese from Brazil but everyone can use it
