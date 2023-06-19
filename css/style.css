@@ -1,0 +1,623 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+	background-color: #f4f4f4;
+	position: relative;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.servicos > h2,
+.projetos > h2,
+.depoimentos > h2,
+.contato > h2{
+	padding: 0 2%;
+}
+
+.btn-sabermais{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	width: 130px;
+	padding: 4px 10px;
+	background-color: #C92F2F;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 20px;
+	display: block;
+	margin-top: 30px;
+}
+.btnPadrao{
+	margin-top: 10px;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	width: 80%;	
+	padding: 10px 0;
+	background-color: #C92F2F;
+	display: inline-block;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
+}
+
+.btnPadrao2{
+	font-size: 18px;
+	color: white;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #FDB750;
+	display: inline-block;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
+	margin: 20px auto 0 auto;
+}
+
+a.btnPadrao{
+	text-transform: none;
+}
+.close{
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	font-size: 20px;
+	background-color: #FDB750;
+	color: white;
+	margin-bottom: 10px;
+}
+
+/* carrinho */
+
+section.carrinho{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 999;
+	padding: 2%;
+}
+
+section.carrinho > .container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+section.carrinho .carroWraper{
+	width: 100%;
+	height: auto;
+	max-width: 700px;
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 30px 20px;
+	text-transform: uppercase;
+}
+
+.carroWraper i.fa-square-xmark{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: red;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.carroWraper i.fa-trash-can{
+	color: red;
+	cursor: pointer;
+}
+
+.carroWraper h4{
+	margin-bottom: 5px;
+}
+
+.carroWraper p{
+	margin-bottom: 8px;
+	text-transform: none;
+}
+
+.meioPagamento{
+	width: 100%;
+	height: 40px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	outline: 0;
+	border: 1px dotted black;
+}
+
+input[name=endereco]{
+	width:100%;
+	outline:0;
+	display:block;
+	height:25px;
+	padding-left:8px;
+	border:1px solid black;
+}
+
+input[name=endereco]{
+	width:100%;
+	outline:0;
+	display:block;
+	height:30px;
+	padding-left:8px;
+	border:1px solid black;
+}
+
+.troco{
+	display: none;
+}
+
+input[name=troco]{
+	width:100%;
+	outline:0;
+	display:block;
+	height:30px;
+	padding-left:8px;
+	border:1px solid black;
+}
+
+.carrinho textarea{
+	width:100%;
+	height: 150px;
+	resize: vertical;
+	outline:0;
+	display:block;
+	padding:8px;
+	border:1px solid black;
+}
+
+.finalPedido{
+	padding-top: 20px;
+	width: 100%;
+}
+
+.finalPedido > .btnPadrao{
+	width: 100%;
+	background-color: #18A558;
+}
+
+/* -header- */
+header{
+	width: 100%;
+	padding: 10px 0;
+	background-color: black;
+}
+
+.logo-wraper{
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+
+.logo-wraper img{
+	width: 20%;
+}
+
+header nav.menu-desktop{
+	width: 30%;
+	float: right;
+}
+
+nav.menu-desktop ul li{
+	display: inline-block;
+	margin-right: 18px;
+}
+
+nav.menu-desktop ul li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	top: 60px;
+	display: block;
+	font-weight: lighter;
+}
+
+nav.menu-desktop ul li i{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	top: 60px;
+	display: block;
+	cursor: pointer;
+}
+
+nav.menu-desktop ul li a:hover{
+	color: yellow;
+}
+
+/* mobile */
+
+header nav.menu-mobile{
+    display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	text-align: right;
+    padding-right: 40px;
+	z-index: 99;
+}
+
+nav.menu-mobile ul li{
+	display: block;
+	width: 100%;
+}
+
+nav.menu-mobile ul li i{
+    position: relative;
+    top: -25px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 8px 0;
+	font-size: 40px;
+    cursor: pointer;
+}
+
+/* aviso */
+
+section.aviso{
+	width: 100%;
+	height: 45px;
+	padding: 10px 0;
+	background-color: #222;
+	color: white;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+section.aviso > h3{
+	margin-right: 50px;
+	width: 100%;
+	position: absolute;
+	text-transform: uppercase;
+	-webkit-animation: rolagem 10s linear infinite;
+	animation: rolagem 10s linear infinite;
+	transform: translateX(100%);
+}
+
+@keyframes rolagem{
+	0%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(-100%);
+	}
+}
+
+section.aviso > h3 > i{
+	color: yellow;
+}
+
+/* buscar */
+
+.buscaProduto{
+	width: 100%;
+	padding-top: 20px;
+}
+
+.buscaProduto input[type=text]{
+	width: 100%;
+	line-height: 40px;
+	padding-left: 10px;
+	outline: 0;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.buscaProduto input[type=submit]{
+	width: 100%;
+	max-width: 100px;
+	padding: 8px;
+	outline: 0;
+	cursor: pointer;
+	color: black;
+	border-radius: 5px;
+	background-color: #A2C4E0;
+	border: 0;
+	border-bottom: 4px solid #52688F;
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* section cardapio */
+
+section.cardapio{
+	width: 100%;
+	height: 100%;
+	min-height: 700px;
+	padding-bottom: 40px;
+}
+
+div.produtoWraper{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+div.produtoSingle{
+	margin-top: 50px;
+	padding: 10px;
+	width: 24%;
+	height: auto;
+	max-height: 450px;
+	background-color: white;
+	text-align: center;
+	-webkit-box-shadow: 5px 3px 13px 1px #ccc; 
+	box-shadow: 5px 3px 13px 1px #ccc;
+	text-transform: uppercase;
+	position: relative;
+}
+
+div.produtoSingle h4:nth-of-type(1){
+	margin-top: 10px;
+	color: #FDB750;
+}
+
+.produtoSingle .descricao{
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	max-height: 100%;
+	display: none;
+	padding: 10px 20px;
+	background-color: #f8f8f8;
+	border-radius: 15px;
+	border-top: 4px solid #FDB750;
+}
+
+.produtoSingle .descricao p{
+	word-break: break-all;
+	text-align: justify;
+}
+
+section.cardapio img{
+	margin-top: 20px;
+	width: 80%;
+	max-height: 50%;
+}
+
+
+/* contato */
+
+section.contato{
+	width: 100%;
+	min-height: 500px;
+	text-align: center;
+	padding-bottom: 150px;
+	color: black;
+}
+
+section.contato > .container{
+	max-width: 1100px;
+}
+
+.contato h2{margin-top: 80px;}
+
+.contato > .container > p{
+	font-weight: lighter;
+	max-width: 600px;
+	margin: 10px auto 0 auto;
+}
+
+.contato form{
+	padding-top: 20px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.contato form div{
+	text-align: center;
+	margin-right: -4px;
+	display: inline-block;
+	width: 50%;
+}
+
+.contato form p{
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	padding-left: 20px;
+}
+
+.contato form input[type=text]{
+	width: 90%;
+	border-radius: 20px;
+	outline: 0;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	line-height: 30px;
+}
+
+.contato form input[type=email]{
+	width: 90%;
+	border-radius: 20px;
+	outline: 0;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	line-height: 30px;
+}
+
+.contato form textarea{
+	outline: 0;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 8px;
+	width: 94%;
+	height: 200px;
+	resize: vertical;
+}
+
+.contato form input[type=submit]{
+	cursor: pointer;
+	max-width: 140px;
+	border: 0;
+	outline: 0;
+	margin: 25px auto 0 auto;
+	left: 46%;
+}
+
+/* footer */
+
+footer{
+	width: 100%;
+	min-height: 150px;
+	color: white;
+	font-size: 14px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: black;
+}
+
+footer > .container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer .container div{
+	min-height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+	text-align: center;
+	width: calc(100% / 2);
+}
+
+footer > .container img{
+	width: 200px;
+	height: 110px;
+	display: inline-block;
+}
+
+footer div .linkUtil{
+	color: #FDB750;
+	padding-top: 24px;
+}
+
+footer div .linkUtil a{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+footer div .linkUtil a:hover{
+	color: yellow;
+}
+
+/* responsivo */
+
+@media screen and (max-width: 1196px){
+	nav.menu-desktop ul li{
+		display: none;
+	}
+
+	header nav.menu-mobile{
+        display: block;
+		top: 100px;
+	}
+
+	header i.fas{
+		display: block;
+	}
+
+	.logo-wraper{
+		width: 100%;
+		text-align: left;
+	}
+
+	.logo-wraper img{
+		width: 40%;
+		margin: 0 auto;
+	}
+
+	header .container a.logo{
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 1070px){
+
+	div.produtoSingle{
+		margin-top: 50px;
+		padding: 10px;
+		width: 32%;
+		max-height: 450px;
+		background-color: white;
+		border-radius: 15px;
+		text-align: center;
+		-webkit-box-shadow: 5px 3px 13px 1px #ccc; 
+		box-shadow: 5px 3px 13px 1px #ccc;
+		text-transform: uppercase;
+		position: relative;
+	}
+
+}
+
+@media screen and (max-width: 881px){
+
+	.btnPadrao{
+		font-size: 16px;
+		width: 80%;	
+	}
+
+	div.produtoSingle{
+		padding: 10px;
+		width: 48%;
+	}
+
+}
+
+@media screen and (max-width: 500px){
+	div.produtoSingle{
+		padding: 10px;
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 600px){
+	footer > .container div{
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 385px){
+	div.qualidades{
+		bottom: 100px;
+	}
+}
